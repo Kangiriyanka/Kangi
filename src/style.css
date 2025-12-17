@@ -5,6 +5,9 @@
 @source "../node_modules/flowbite-vue";
 
 
+
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -26,15 +29,15 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #217f2bff;
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
@@ -66,10 +69,11 @@ button:focus-visible {
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
+  height: inherit;
+  width: inherit;
+ 
+  
   padding: 2rem;
-  text-align: center;
 }
 
 @media (prefers-color-scheme: light) {
@@ -83,4 +87,11 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Headers */
+
+
+h2 {
+  font-size: 1.5em;
 }

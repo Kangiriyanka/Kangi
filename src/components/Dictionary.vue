@@ -6,9 +6,7 @@ import { FwbAlert } from 'flowbite-vue'
 </script>
 
 <template>
-    <fwb-alert color="info" class="mb-4" dismissible>
-        This is a dictionary component placeholder.
-    </fwb-alert>
+   
 </template>
 
 

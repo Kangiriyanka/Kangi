@@ -1,23 +1,21 @@
 <template>
   <fwb-navbar>
     <template #logo>
-      <fwb-navbar-logo alt="Flowbite logo" image-url="/images/logo.svg" link="#">
-        Flowbite
+      <fwb-navbar-logo alt="Flowbite logo" image-url="/images/logo.png" link="#">
+       <RouterLink to ="/">Kangi</RouterLink>
       </fwb-navbar-logo>
     </template>
     <template #default="{isShowMenu}">
       <fwb-navbar-collapse :is-show-menu="isShowMenu">
-        <fwb-navbar-link is-active link="#">
-          Home
+    
+        <fwb-navbar-link >
+          Words
         </fwb-navbar-link>
-        <fwb-navbar-link link="#">
-          Services
+        <fwb-navbar-link >
+         <RouterLink to ="/graphs">Graphs</RouterLink>
         </fwb-navbar-link>
-        <fwb-navbar-link link="#">
-          Pricing
-        </fwb-navbar-link>
-        <fwb-navbar-link link="#">
-          Contact
+        <fwb-navbar-link to="/writing" >
+          <RouterLink to="/writing"> Writing </RouterLink>
         </fwb-navbar-link>
       </fwb-navbar-collapse>
     </template>
@@ -26,7 +24,10 @@
         <path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
       </svg>
     </template>
+    
   </fwb-navbar>
+
+
 </template>
 
 <script setup>

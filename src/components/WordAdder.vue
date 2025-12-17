@@ -1,11 +1,20 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import WordAdderForm from './WordAdderForm.vue';
 
 
 </script>
 
 <template>
-  <h2> Add a New Word </h2>
+  
+
+  
+  <WordAdderForm />
+
+
+
+
+   
 
   
 </template>
